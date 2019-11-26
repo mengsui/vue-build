@@ -14,8 +14,9 @@ router.beforeEach((to, from, next) => {
   const token= Vue.ls.get(ACCESS_TOKEN);
 
   to.meta && (typeof to.meta.title !== 'undefined' && setDocumentTitle(`${to.meta.title}`))
-
+  console.log('token',token)
   if(token){
+    console.log('store.getters.menu',store.getters.menu)
     if(store.getters.menu.length === 0) {
       // 获取列表数据
       store.dispatch('user/GetMenu').then(menu=>{
@@ -50,12 +51,13 @@ router.beforeEach((to, from, next) => {
         next('/manage')
         NProgress.done()
       } else {
+        console.log('zheli:')
         /**
           * 这里应该使用 next() 如果后台没有处理token超时返回的解构问题，前端强制跳转的登陆页面
         */
-        // next();
-        Vue.ls.clear();
-        next('/manage/login');
+        // Vue.ls.clear();
+        // next('/manage/login');
+        next();
       }
     };
   } else {
