@@ -14,7 +14,7 @@ export function loginAjax(parameter){
   return new Promise((resolve)=>{
     resolve({
       "result": {
-          "userName": "比目鱼",
+          "userName": "比目鱼2号测试",
           "userHeadImg": "",
           "phone": "15810240230",
           "userId": 1001,
