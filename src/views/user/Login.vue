@@ -12,7 +12,7 @@
         <a-input
           size="large"
           type="text"
-          placeholder="用户名( 1 )"
+          placeholder="用户名：1"
           v-decorator="[
             'phone',
             {rules: [{ required: true, message: '请输入用户名' }], validateTrigger: 'change'}
@@ -27,7 +27,7 @@
           size="large"
           type="password"
           autocomplete="false"
-          placeholder="密码( 1 )"
+          placeholder="密码：1"
           v-decorator="[
             'password',
             {rules: [{ required: true, message: '请输入密码' }], validateTrigger: 'blur'}
