@@ -15,7 +15,7 @@ export function loginAjax(parameter){
     resolve({
       "result": {
           "userName": "比目鱼",
-          "userHeadImg": "http://files.shouhuobao.com/product/31169042126609419_1564131175088.jpg",
+          "userHeadImg": "",
           "phone": "15810240230",
           "userId": 1001,
           "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMDAxIiwic3ViIjoi55m75b2VSldUIiwiZXhwIjoxNTc0MjM0OTkzLCJpYXQiOjE1NzQyMjA1OTN9.u47qL3TW9o7IWOBxWHljRks8BmYoyw0F6pWZmEpu2z4",
