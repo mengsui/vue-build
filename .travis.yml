@@ -3,10 +3,3 @@ node_js:
   - 10.15.0
 script: 
   - npm run build
-  - ls
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: ca9d0ac8899ad93eb487f90ad630394c5ed8abda
-  on:
-    branch: master
