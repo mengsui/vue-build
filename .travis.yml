@@ -7,6 +7,6 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: ca9d0ac8899ad93eb487f90ad630394c5ed8abda
+  github_token: $GITHUB_TOKEN
   on:
     branch: master
