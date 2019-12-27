@@ -57,6 +57,8 @@ import { BasicLayout, BlankLayout } from '@/layouts'
 import { createNamespacedHelpers } from 'vuex'
 const { mapState, mapActions } = createNamespacedHelpers('user')
 
+import { axios } from '@/utils/request';
+
 export default {
 
   data () {
@@ -90,6 +92,14 @@ export default {
         if (!err) {
           const loginParams = { ...values }
 
+          axios({
+            url: '/newscontent',
+            method: 'GET',
+          }).then(res=>{
+            console.log(res)
+          })
+
+          return;
           Login(loginParams)
             .then((res) => this.loginSuccess(res))
             .catch(err => this.requestFailed(err))

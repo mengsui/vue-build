@@ -7,7 +7,7 @@ import { configData } from '@/utils/env.js';
 
 // 创建 axios 实例
 const service = axios.create({
-  baseURL: configData.baseURL,
+  baseURL: 'http://192.168.1.130:3000',
   timeout: 6000, // 请求超时时间
 })
 
